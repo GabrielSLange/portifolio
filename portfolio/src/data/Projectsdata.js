@@ -46,5 +46,21 @@ export const projects = [
       'Geração server-side de contratos em PDF (PuppeteerSharp)',
       'Arquitetura Multi-tenant completa com perfis de acesso'
     ]
+  },
+  {
+    id: 'automacao-dms',
+    title: 'Robô ISSNet (Automação DMS)',
+    description: 'Software RPA (Robotic Process Automation) desktop desenvolvido para automatizar o fechamento de declarações fiscais de serviços no portal da prefeitura. O robô reduz drasticamente o trabalho manual navegando autonomamente por sistemas legados e lidando com barreiras anti-bot.',
+    tech: ['Python', 'DrissionPage', 'Tkinter', 'Pandas'],
+    category: 'Automação / RPA',
+    image: '',
+    github: '',
+    demo: '',
+    highlights: [
+      'Bypass de proteções Cloudflare utilizando DrissionPage (Chromium)',
+      'Sistema de duas fases: login via procuração e fallback para Certificado Digital',
+      'Interface gráfica desktop (GUI) construída nativamente com Tkinter',
+      'Geração automatizada de relatórios de execução em PDF'
+    ]
   }
 ];
