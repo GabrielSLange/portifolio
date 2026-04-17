@@ -1,4 +1,4 @@
-import { projects } from '../data/projects';
+import { projects } from '../data/Projectsdata';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 export default function Projects() {
