@@ -5,9 +5,9 @@ export const projects = [
     description: 'Sistema completo de controle de ponto eletrônico aderente à legislação brasileira (Portaria 671 e eSocial). Desenvolvido para garantir segurança jurídica às empresas, a aplicação conta com registro de ponto via geolocalização, geração de comprovantes em PDF com assinatura digital (Hash SHA-256) e exportação de relatórios fiscais (AFD/AEJ).',
     tech: ['C#', '.NET 8', 'React Native', 'Expo', 'PostgreSQL', 'Docker'],
     category: 'MVP / Mobile & Web',
-    image: '', 
-    github: '', 
-    demo: '', 
+    image: '/projects/EvoluaPonto.gif',
+    github: '',
+    demo: '',
     highlights: [
       'Conformidade legal com regras do Ministério do Trabalho',
       'Geolocalização em tempo real e auditoria de IP',
@@ -21,7 +21,7 @@ export const projects = [
     description: 'Plataforma SaaS multi-tenant para gestão de presença em eventos. Substitui listas de papel por um check-in digital ágil, utilizando WebSockets para garantir que múltiplos fiscais operem dispositivos simultaneamente com o status de presença sincronizado em tempo real.',
     tech: ['C#', '.NET 10', 'Blazor WASM', 'SignalR', 'PostgreSQL', 'Docker'],
     category: 'SaaS / Web',
-    image: '',
+    image: '/projects/EvoluaCheckin.gif',
     github: '',
     demo: '',
     highlights: [
@@ -33,7 +33,7 @@ export const projects = [
   },
   {
     id: 'evolua-soft',
-    title: 'EvoluaSoft',
+    title: 'Evolua Soft',
     description: 'Plataforma SaaS multi-tenant focada na gestão estratégica de escritórios de contabilidade. Centraliza o cadastro de clientes, automatiza a geração de contratos em PDF personalizados e gerencia ativamente os vencimentos de certificados digitais (A1/A3) através de um dashboard inteligente.',
     tech: ['C#', '.NET 10', 'Blazor WASM', 'Google Drive API', 'PostgreSQL', 'Docker'],
     category: 'SaaS / Web',
