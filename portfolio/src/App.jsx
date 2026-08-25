@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react';
 import { Sun, Moon, ArrowUpRight, Terminal } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import HeroSection from './components/HeroSection';
-import Projects from './components/Projects';
 import About from './components/About';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
 import Contact from './components/Contact';
 
 function App() {
@@ -49,6 +50,12 @@ function App() {
               className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
             >
               Sobre & Stack
+            </a>
+            <a 
+              href="#experience" 
+              className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+            >
+              Trajetória
             </a>
             <a 
               href="#projects" 
@@ -106,6 +113,7 @@ function App() {
       <main className="relative z-10 flex flex-col items-center">
         <HeroSection />
         <About />
+        <Experience />
         <Projects />
         <Contact />
       </main>
@@ -119,6 +127,7 @@ function App() {
           </div>
           <div className="flex items-center gap-4">
             <a href="#about" className="hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors">Sobre</a>
+            <a href="#experience" className="hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors">Trajetória</a>
             <a href="#projects" className="hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors">Projetos</a>
             <a href="#contact" className="hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors">Contato</a>
           </div>

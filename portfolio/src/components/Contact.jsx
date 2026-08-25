@@ -9,7 +9,7 @@ export default function Contact() {
         
         <div className="max-w-2xl">
           <span className="text-xs font-mono uppercase tracking-widest text-violet-600 dark:text-violet-400">
-            03 // Próximos Passos
+            04 // Próximos Passos
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-950 dark:text-zinc-50 mt-2 mb-4">
             Vamos conversar sobre tecnologia e oportunidades?

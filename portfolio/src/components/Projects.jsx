@@ -10,7 +10,7 @@ export default function Projects() {
       <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 mb-12">
         <div>
           <span className="text-xs font-mono uppercase tracking-widest text-violet-600 dark:text-violet-400">
-            02 // Engenharia Aplicada
+            03 // Engenharia Aplicada
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-950 dark:text-zinc-50 mt-1">
             Projetos & Sistemas Desenvolvidos
