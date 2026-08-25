@@ -1,57 +1,135 @@
-import { Mail } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, Terminal, Server, ShieldCheck, Cpu } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col items-center justify-center text-center py-24 px-4 w-full max-w-4xl mx-auto">
+    <section className="w-full max-w-6xl mx-auto px-4 sm:px-6 pt-16 md:pt-24 pb-20">
       
-      <div className="mb-6 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-100 text-sky-700 dark:bg-sky-900/30 dark:text-sky-300 text-sm font-medium border border-sky-200 dark:border-sky-800/50">
-        <span className="relative flex h-2 w-2">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-          <span className="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
-        </span>
-        Disponível para novos desafios
-      </div>
-
-      <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">
-        Construindo soluções com <br className="hidden md:block" />
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-blue-600">
-          Lógica e Eficiência
-        </span>
-      </h1>
-      
-      <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mb-10 leading-relaxed">
-        Olá, eu sou o Gabriel. Sou um Desenvolvedor de Software focado em criar sistemas robustos, automatizar processos e resolver problemas complexos de negócios utilizando o ecossistema C# e .NET.
-      </p>
-      
-      <div className="flex flex-wrap items-center justify-center gap-4">
-        <a 
-          href="https://www.linkedin.com/in/gabriel-sousa-lange-0265a6272" 
-          target="_blank" 
-          rel="noreferrer"
-          className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-xl font-medium hover:bg-blue-700 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-blue-500/25"
-        >
-          <FaLinkedin size={20} />
-          LinkedIn
-        </a>
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
         
-        <a 
-          href="https://github.com/GabrielSLange" 
-          target="_blank" 
-          rel="noreferrer"
-          className="flex items-center gap-2 px-6 py-3 bg-white text-slate-800 border border-slate-200 dark:bg-slate-800 dark:text-slate-100 dark:border-slate-700 rounded-xl font-medium hover:bg-slate-50 dark:hover:bg-slate-700 hover:scale-105 active:scale-95 transition-all"
-        >
-          <FaGithub size={20} />
-          GitHub
-        </a>
+        {/* Left Column: Core Introduction */}
+        <div className="lg:col-span-7 flex flex-col items-start text-left">
+          
+          {/* Status Label (Clean & Professional) */}
+          <div className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-md bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs font-mono text-zinc-700 dark:text-zinc-300 mb-6">
+            <span className="w-2 h-2 rounded-full bg-emerald-500" />
+            <span>Disponível para novos projetos & contratos</span>
+          </div>
 
-        <a 
-          href="mailto:gabriellange845@gmail.com" 
-          className="flex items-center justify-center p-3 text-slate-500 hover:text-sky-500 dark:text-slate-400 dark:hover:text-sky-400 hover:scale-110 active:scale-95 transition-all bg-white border border-slate-200 dark:bg-slate-800 dark:border-slate-700 rounded-xl"
-        >
-          <Mail size={22} />
-        </a>
+          {/* Headline */}
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-950 dark:text-zinc-50 leading-[1.08] mb-6">
+            Engenharia de software com foco em <span className="underline decoration-violet-500 decoration-2 underline-offset-8">.NET & C#</span>
+          </h1>
+
+          {/* Value Proposition Subtext */}
+          <p className="text-base sm:text-lg text-zinc-600 dark:text-zinc-400 max-w-xl leading-relaxed mb-8">
+            Olá, eu sou o <strong>Gabriel S. Lange</strong>. Construo sistemas corporativos robustos, arquiteturas SaaS multi-tenant, automações fiscais e esteiras de CI/CD para operações que não podem parar.
+          </p>
+
+          {/* CTAs */}
+          <div className="flex flex-wrap items-center gap-3.5 mb-10">
+            <a 
+              href="#projects"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-zinc-900 dark:bg-zinc-100 text-zinc-100 dark:text-zinc-950 font-medium text-sm hover:bg-zinc-800 dark:hover:bg-white active:scale-[0.98] transition-all shadow-sm"
+            >
+              Explorar Projetos
+              <ArrowDown size={16} />
+            </a>
+
+            <a 
+              href="#contact"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-transparent hover:bg-zinc-100 dark:hover:bg-zinc-900 text-zinc-800 dark:text-zinc-200 border border-zinc-300 dark:border-zinc-800 font-medium text-sm active:scale-[0.98] transition-all"
+            >
+              Falar Comigo
+              <ArrowUpRight size={16} />
+            </a>
+          </div>
+
+          {/* Tech Stack Bar */}
+          <div className="w-full pt-6 border-t border-zinc-200 dark:border-zinc-800/80">
+            <div className="text-[11px] font-mono uppercase tracking-wider text-zinc-400 dark:text-zinc-400 mb-3">
+              Stack Principal & Ambiente
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {['C#', '.NET 10 / 8', 'ASP.NET Core', 'Blazor WASM', 'PostgreSQL', 'Docker', 'Linux VPS', 'CI/CD Actions'].map((item) => (
+                <span 
+                  key={item} 
+                  className="px-2.5 py-1 text-xs font-mono rounded bg-zinc-100 dark:bg-zinc-900/90 text-zinc-700 dark:text-zinc-300 border border-zinc-200/80 dark:border-zinc-800"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+
+        </div>
+
+        {/* Right Column: Live Terminal / Engineering Snapshot Card */}
+        <div className="lg:col-span-5 w-full">
+          <div className="rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-900 text-zinc-100 shadow-xl overflow-hidden font-mono text-xs">
+            
+            {/* Terminal Header */}
+            <div className="px-4 py-3 bg-zinc-950/80 border-b border-zinc-800 flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <span className="w-3 h-3 rounded-full bg-zinc-700 inline-block" />
+                <span className="w-3 h-3 rounded-full bg-zinc-700 inline-block" />
+                <span className="w-3 h-3 rounded-full bg-zinc-700 inline-block" />
+                <span className="ml-2 text-zinc-400 text-[11px]">gabriel@arch-vps: ~</span>
+              </div>
+              <div className="flex items-center gap-1 text-emerald-400 text-[11px]">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block" />
+                online
+              </div>
+            </div>
+
+            {/* Terminal Body */}
+            <div className="p-5 space-y-4 text-zinc-300 leading-relaxed">
+              
+              <div>
+                <span className="text-violet-400">$</span> dotnet --info
+                <div className="text-zinc-400 mt-1 pl-3 border-l border-zinc-800">
+                  <p>Runtime: .NET 10.0 / .NET 8.0 LTS</p>
+                  <p>Arch: x64 Linux / Containerized</p>
+                </div>
+              </div>
+
+              <div>
+                <span className="text-violet-400">$</span> inspect --focus-areas
+                <div className="grid grid-cols-2 gap-2 mt-2">
+                  <div className="p-2.5 rounded bg-zinc-950/60 border border-zinc-800/80">
+                    <div className="text-zinc-100 font-semibold flex items-center gap-1.5 mb-1">
+                      <Server size={13} className="text-violet-400" />
+                      Backend & APIs
+                    </div>
+                    <p className="text-[11px] text-zinc-400 leading-normal">
+                      C#, EF Core, SignalR WebSockets, Multitenancy.
+                    </p>
+                  </div>
+
+                  <div className="p-2.5 rounded bg-zinc-950/60 border border-zinc-800/80">
+                    <div className="text-zinc-100 font-semibold flex items-center gap-1.5 mb-1">
+                      <Cpu size={13} className="text-violet-400" />
+                      Infra & DevOps
+                    </div>
+                    <p className="text-[11px] text-zinc-400 leading-normal">
+                      VPS Linux, Docker Compose, GitHub Actions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="pt-2 border-t border-zinc-800/80 flex items-center justify-between text-zinc-400 text-[11px]">
+                <span>Status: Pronto para entregas reais</span>
+                <span className="text-violet-400 font-medium">GSL // Dev</span>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
       </div>
+
     </section>
   );
 }

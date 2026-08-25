@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Ignorar arquivos temporários e locais do Agente
+.agents/logs/
+.agents/state/
+.agents/chat/
+.agents/history/
+.agents/**/*.env
